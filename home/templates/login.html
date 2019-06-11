@@ -21,7 +21,49 @@ form {
   margin-left: auto;
     margin-right: auto;
 }
-input{
+input[type=text]{
+  width: 400px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: 'play', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  outline: none;
+  color: #fff;
+  opacity: 0.5;
+}
+input[type=radio]{
+<!--  width: 400px;-->
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: 'play', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+<!--  padding: 10px 0;-->
+  outline: none;
+  color: #fff;
+  opacity: 0.5;
+}
+input[type=password]{
+  width: 400px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-family: 'play', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  outline: none;
+  color: #fff;
+  opacity: 0.5;
+}
+input[type=button]{
   width: 400px;
   text-align: center;
   background: transparent;
@@ -87,13 +129,15 @@ a:hover{
       <h2>Login</h2>
       <input type="text" name="username" placeholder="username" required><br><br><br>
       <input type="password" name="password" placeholder="password" required><br><br>
-        <br><br>
+        <br>
+        <input type="radio" name="userType" value="Doctor">Doctor  	&nbsp;  	&nbsp;
+        <input type="radio" name="userType" value="Patient"> Patient<br><br>
       <a href="#"><input type="button" value="Login"></a><br><br><br>
 <!--      <div id="container">-->
 <!--        <a href="#">Reset Password</a>-->
 <!--        <a href="#">Forgot Password?</a>-->
 <!--      </div>-->
-<!--      <br><br><br><br><br>-->
+<!--      <br><br><br> <br><br>-->
 <!--      Don't have account?<a href="#">&nbsp;Sign Up</a>-->
     </form>
   </div>
