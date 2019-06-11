@@ -21,7 +21,37 @@
 <h3><span style="color: #ff0000;"><strong><span style="color: #333399;">Gender:</span> <span style="color: #000000;">&lt;Gender&gt;</span></strong></span></h3>
 <h3><span style="color: #ff0000;"><strong><span style="color: #333399;">Blood Group:</span> <span style="color: #000000;">&lt;BGroup&gt;</span></strong></span></h3>
 <h3><span style="color: #ff0000;"><strong><span style="color: #000000;"><span style="color: #000080;">Allergies:</span> &lt;None&gt;</span></strong></span></h3>
-<h3><span style="color: #333399;"><strong>Medical conditions: <span style="color: #000000;">&lt;None&gt;</span></strong></span></h3>
+<h3><span style="color: #333399;"><strong>Medical conditions: <span style="color: #000000;">&lt;None&gt;
+
+    <table class="ui structured celled sortable table" style="margin-bottom: 16px;">
+
+<!--        <thead>-->
+<!--                <tr>-->
+
+<!--                    <th rowspan="2">Condition Name</th>-->
+
+<!--                </tr>-->
+<!--        </thead>-->
+         <tbody>
+                    {% for med in available_rooms %}
+                    <tr>
+                        <td>
+                            {{ med }}
+                        </td>
+
+                    </tr>
+                    {% endfor %}
+        </tbody>
+
+
+    </table>
+
+
+
+
+
+
+</span></strong></span></h3>
 <h3><span style="color: #ff0000;"><strong><span style="color: #000000;"><span style="color: #333399;">Phone Number:</span> &lt;Ph.No&gt;</span></strong></span></h3>
 <h3><span style="color: #ff0000;"><strong><span style="color: #000000;"><span style="color: #000080;">Address:</span> &lt;Address&gt;</span></strong></span></h3>
 <p>&nbsp;</p>
