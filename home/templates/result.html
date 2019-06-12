@@ -1,0 +1,59 @@
+<head>
+
+
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+
+
+
+
+<body>
+
+
+<table  style="margin-bottom: 16px;">
+                <thead>
+                <tr>
+
+                    <th rowspan="2">Disease</th>
+                    <th rowspan="2">Medicine</th>
+                    <th rowspan="2">Count</th>
+
+                </tr>
+                </thead>
+
+                <tbody>
+                    {% for z in available_rooms %}
+                    <tr>
+                        <td>
+                            {{ room }}
+                        </td>
+                        <td>
+                            {{ room.room_floor }}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+</table>
+
+
+
+
+
+
+</body>
